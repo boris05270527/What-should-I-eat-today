@@ -2,7 +2,7 @@ const RACE_DISTANCE = 300; // how far they must run
 const ESTIMATED_RACE_DURATION_MS = 12000; // ~12s race (tweakable)
 
 // Each speed phase lasts between 1/20 and 1/10 of the race
-const MIN_PHASE_MS = ESTIMATED_RACE_DURATION_MS / 20; // ~600 ms
+const MIN_PHASE_MS = ESTIMATED_RACE_DURATION_MS / 40; // ~600 ms
 const MAX_PHASE_MS = ESTIMATED_RACE_DURATION_MS / 10; // ~1200 ms;
 
 function randomPhaseDuration() {
