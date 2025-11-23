@@ -31,10 +31,10 @@ const COLORS = [
 ];
 
 const defaultRestaurants = [
-  { name: "Pizza Place", weight: 1.0 },
-  { name: "Sushi Bar", weight: 1.2 },
-  { name: "Burger Joint", weight: 1.0 },
-  { name: "Ramen House", weight: 1.3 },
+  { name: "Damon", weight: 1.0 },
+  { name: "Damon again?", weight: 1.2 },
+  { name: "YUM YUM DAMON", weight: 1.0 },
+  { name: "DAMONNNNNNNNN", weight: 1.3 },
 ];
 
 let restaurants = [];
