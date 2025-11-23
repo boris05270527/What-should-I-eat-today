@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Restaurant Horse Race</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <h1><span>🏇</span> Restaurant Horse Race</h1>
+      <p class="subtitle">
+        Let your restaurants race to decide where you eat. Everything runs
+        locally in this file.
+      </p>
+
+      <div class="row">
+        <!-- Setup card -->
+        <div class="card">
+          <h2>1. Setup restaurants</h2>
+          <label for="name-input">Restaurant name</label>
+          <input id="name-input" type="text" placeholder="e.g., Sushi Hub" />
+          <label for="weight-select" style="margin-top: 8px">
+            Preference (weight)
+          </label>
+          <select id="weight-select">
+            <option value="0.8">Light (just okay)</option>
+            <option value="1.0" selected>Normal</option>
+            <option value="1.3">Strong craving</option>
+            <option value="1.6">Must-have today</option>
+          </select>
+          <button class="btn" id="add-btn">+ Add restaurant</button>
+          <p class="small">
+            Tip: add at least 2 restaurants. We use weights + randomness so
+            favorites win more often but not always.
+          </p>
+
+          <div class="restaurant-list" id="restaurant-list"></div>
+        </div>
+
+        <!-- Race card -->
+        <div class="card">
+          <div class="race-header">
+            <h2>2. Run the race</h2>
+            <span class="race-status" id="race-status">Waiting to start</span>
+          </div>
+          <button class="btn" id="start-btn">Start race</button>
+          <button class="btn secondary" id="reset-btn" style="margin-left: 6px">
+            Clear all
+          </button>
+          <div class="track-wrapper">
+            <div class="track-container">
+              <div class="lanes" id="lanes"></div>
+              <div class="finish-line"></div>
+              <div class="finish-flag">🏁</div>
+            </div>
+          </div>
+          <div class="winner-banner" id="winner-banner">
+            <div style="margin-bottom: 4px">🎉 Result</div>
+            <div id="winner-text"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
